@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chebox addition</title>
+
+  <style>
+    table{
+      text-align: center;
+      border:  1px solid black;
+    border-collapse: collapse;
+    height: 400px;
+    width: 400px;
+    }
+
+    tr,td,th{
+      border: 1px solid black;
+      border-collapse: collapse;
+
+    }
+    input{
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <table>
+      <tr>
+        <th>Checkbox</th>
+        <th>value</th>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="a" value="2" id="" onclick="Total()"></td>
+        <td><label for="text">Item value:2</label></td>
+      </tr>
+      <td><input type="checkbox" name="a" id="" value="6" onclick="Total()"></td>
+      <td><label for="text">Item Value:6</label></td>
+      <tr>
+        <td><input type="checkbox" name="a" id="" value="8" onclick="Total()"></td>
+        <td><label for="text">Item Value:8</label></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="a" id="" value="7" onclick="Total()"></td>
+        <td><label for="text">Item Value:7</label></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="a" id="" value="3" onclick="Total()"></td>
+        <td><label for="text">Item Value:3</label></td>
+      </tr>
+      <tr>
+        <td>Total Check Item Value:-</td>
+        <td><input type="text" placeholder="0" id="total"></td>
+      </tr>
+    </table>
+  </center>
+
+
+
+  <script>
+function Total(){
+  var input= document.getElementByName("a")
+
+  var total=0
+  for(var i=0; i< input.length;i++){
+    if(input[i].checked){
+      total = total + parseFloat(input[i].value)
+    }  
+  }
+  document.getElementById("total").value="Rs.: "+total.toFixed()
+}
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<style>
+#btn{
+   padding: 30px;
+   background-color: red;
+   border: 2px; 
+   color: aqua;
+   font-weight: bold;
+   border-radius: 6px;
+
+}
+</style>
+<body>
+    <h1>Event</h1>
+    <!-- <button onclick="this .innerHTML=Date()"> click</button> -->
+    <p id="p1"> What is method overriding in java ?
+        If we have methods with same signature (same name, same signature, same return type) in super class 
+        and subclass then we say
+        subclass method is overridden by superclass.
+        When to use overriding in java
+        If we want same method with different behaviour in superclass and subclass then we go for overriding.
+        When we call overridden method with subclass reference subclass method is called hiding the superclass 
+        method.
+</p>
+<button id="btn" onclick="hide">show/hide</button>
+<script>
+    function togglehide(){
+btn= document.getElementById('btn');
+p1=document.getElementById('p1');
+if(p1.style.display != 'none'){
+    p1.style.display='none';
+}
+else{
+    p1.style.display='block';
+}
+    }
+</script>
+</body>
+</html>

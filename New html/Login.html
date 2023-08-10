@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login in html</title>
+    <!-- <link rel="stylesheet" href="./Login.css"> -->
+
+
+</head>
+<style>
+.from{
+    
+    width: 600px;
+    height: 600px;
+    background-color: yellow;
+    padding:100px;
+    border: 1px solid red;
+
+
+
+}
+</style>
+
+<body>
+    <h1> Login form using HTML and CSS</h1>
+    <form action="" onsubmit="return validation()" name="myForm" class="from">
+        <div class="container">
+            <h3>sign in</h3>
+            <p>sign in with your username and password</p>
+
+        </div>
+        <div class="mainContsiner">
+            <label for="username"> your username </label>
+            <input type="text" placeholder="Enter username" name="username" >
+            <br><br>
+            <label for="password"> your password</label>
+            <input type="password" placeholder="Enter password" name=" password" id="" >
+            <br><br>
+            <div class="subcontainer">
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <p class="forgotpsd"> <a href="#">Forgot password</a></p>
+            </div> 
+            
+             <!-- <button><a href="C:\Users\Lenovo\Desktop\Html\New html\button.html"> Login</a></button> -->
+            <input type="submit" value="submit">
+            <p class="register">Not a member ? <a href="#"> Register here</a></p>
+           
+
+        </div>
+
+    </form>
+    <script>
+        function validation(){
+            let a=document.forms["myForm"]["username"].value;
+            if(a =="")
+            {
+                alert ("please enter usrename");
+                return false;
+            }
+            let b=document.forms["myForm"][" password"].value;
+            if(b==""){
+                alert ("please enter password");
+                return false;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

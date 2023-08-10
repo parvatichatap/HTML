@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="example"><p>This is paragraph in div1</p></div>
+    <div class="example"> <p>this is paragraph in div2</p></div>
+    <div class="example"><p> this is paragraph in div3</p></div>
+
+    <input type="button" value="click" id="click" onclick="f1()"/>​
+
+
+    
+    <script>
+        setTimeout(()=>{
+            console.log('hello')
+        },3000);
+
+        setTimeout(()=>{
+            console.log('hi')
+        },5000);
+         function f1(){
+setTimeout(()=>{
+    console.log("done");
+},2000)
+         }
+
+        //  const collection=document.getElementByClassName("example");
+        const collection=document.getElementsByClassName("example")
+
+        // collection[1].style.backgroundColor="red";
+        collection[2].style.backgroundColor="red";
+    </script>
+</body>
+</html>

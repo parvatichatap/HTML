@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+    th{
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    td{
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    input{
+        width: 30px;
+        animation-name: Abhi;
+        animation-duration: 10s;
+        
+
+    }
+    @keyframes ABhi{
+        0%{background-color: yellow;}
+        25%{background-color: pink;}
+        50%{background-color: green;}
+        100%{background-color: gold;}
+    }
+    
+</style>
+<body>
+   <table>
+    <tr>
+    <th>NO</th>
+     <th>Check</th>
+     <th>Remark</th>
+ </tr>
+ <tr>
+     <td>1</td>
+     <td><input type="checkbox" onclick="show()"></td>
+     <td id="main"></td>
+ </tr>
+ 
+ <tr>
+     <td>2</td>
+     <td><input type="checkbox" onclick="show2()"></td>
+     <td id="main2"></td>
+ </tr>
+ <tr>
+     <td>3</td>
+     <td><input type="checkbox" onclick="show3()"></td>
+     <td id="main3"></td>
+</tr>
+ <tr>
+     <td> <button onclick="show4()">Total=</button></td>
+     <td>Total=</td>
+     <td id="total"></td>
+ </tr>
+</table>
+<br><br>
+
+
+<script>
+
+ 
+ function show(){
+     let show = document.getElementById('main').innerHTML="2";
+ }
+ function show2(){
+     let show1 = document.getElementById('main2').innerHTML="2";
+ }
+ function show3(){
+     let show2 = document.getElementById('main3').innerHTML="2";
+     total();
+ }
+ function total(){
+     let show=2;
+         show1=7;
+         show2=2;
+     let sum=document.getElementById('total').innerHTML=show+show1+show2;
+ }
+ </script>
+</body>
+</html>

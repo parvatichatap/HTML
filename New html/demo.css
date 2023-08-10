@@ -1,0 +1,13 @@
+.container{
+    margin: auto;
+    border:1px solid black;
+    width: 400px;
+    height: 500px;
+    color:blue;
+    background-color:yellow ;
+
+
+}
+body{
+    background-color:rgb(255, 192, 234) ;
+}

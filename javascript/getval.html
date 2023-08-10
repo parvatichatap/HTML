@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get value</title>
+
+    <style>
+        div{
+            border: 1px solid black;
+            background-color: mediumorchid;
+            margin: 2px;
+            margin-top: 3px;
+            padding-top: 0%;
+        }
+
+        table{
+            border: 2px solid black;
+        
+            background-color: firebrick;
+
+
+        }
+        th{
+            border: 1px solid black;
+        }
+        tr{
+            border: 1px solid yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+   <div>
+<label for="fname">First name :</label>
+<input  id="id1" type="text" placeholder="First name"><br><br>
+<label for="mname">Midddle name :</label>
+<input  id="id2" type="text" placeholder="Midddle name"><br><br>
+
+<label for="lname">Last name :</label>
+<input  id="id3" type="text" placeholder="Last name"><br><br>
+
+  <label for="age">age :</label>
+<input  id="id4" type="text" placeholder="age"> <br><br>
+<label for="city">city</label>
+<input id="id5" type="text" placeholder="city"><br><br>
+<label for="dob">DOB</label>
+<input type="date" name="DOB" id="id6"><br><br>\
+
+<label for="time">time</label>
+<input type="datetime-local" name="time" id="id7">
+
+<label for="Gender">Gender</label>
+
+<input type="radio" name="gender" id="id8">male
+                <input type="radio" name="gender" id="id9"> female</td>
+
+</div> 
+
+
+<button onclick="adddata()">add data</button><br><br>
+
+<table id="t1">
+    <tr>
+        <th>First Name</th>
+        <th>Midddle name</th>
+        <th>Last name</th>
+        <th>age</th>
+        <th>city</th>
+        <th>DOB</th>
+        <th>time</th>
+        <th>Gender</th>
+    </tr>
+</table>
+</center>
+
+<script>
+    function adddata(){
+      var fname =(document.getElementById("id1").value);
+      var mname = document.getElementById("id2").value;
+      var lname = document.getElementById("id3").value;
+      var age = document.getElementById("id4").value;
+      var city = document.getElementById("id5").value;
+      var dob = document.getElementById("id6").value;
+      var time = document.getElementById("id7").value;
+      var gender = document.getElementById("id8").value;
+      var gender1 = document.getElementById("id9").value;
+      var table =document.getElementById("t1");
+    
+
+
+    var row = table.insertRow(table.rows.length);
+    var cell1 = row.insertCell(0);
+    cell1.innerHTML = fname;
+    var cell2=row.insertCell(1);
+    cell2.innerHTML = mname;
+    var cell3=row.insertCell(2);
+    cell3.innerHTML=lname;
+    var cell4=row.insertCell(3);
+    cell4.innerHTML=age;
+    var cell5=row.insertCell(4);
+    cell5.innerHTML=city;
+    var cell6 = row.insertCell(5); 
+    cell6.innerHTML =dob;
+    var cell7 = row.insertCell(6); 
+    cell7.innerHTML =time;
+    var cell8 = row.insertCell(7); 
+    cell8.innerHTML =gender;
+    var cell9 = row.insertCell(8); 
+    cell9.innerHTML =gender1;
+
+ document.getElementById('id1').value = "";
+     document.getElementById("id2").value ="";
+      document.getElementById("id3").value ="";
+      document.getElementById("id4").value="";
+      document.getElementById("id5").value="";
+      document.getElementById("id6").value="";
+      document.getElementById("id7").value="";
+      document.getElementById("id8").value="";
+      document.getElementById("id9").value="";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display msg when click checkbox</title>
+</head>
+
+<body>
+
+
+
+    Checkbox: <input value="Hello..........!" type="checkbox" id="myCheck1"><br><br>
+
+
+    Checkbox2: <input value="i miss you soooooo much......................!" type="checkbox" id="myCheck2"><br><br>
+
+
+
+    Checkbox3: <input value="byyyyyyyyy......................" type="checkbox" id="myCheck"><br><br>
+
+    <p id="text"></p>
+
+    <button onclick="myFunction()">click</button>
+
+    <script>
+        function myFunction() {
+            var checkBox = document.getElementById("myCheck1");
+            var checkBox2 = document.getElementById("myCheck2");
+            var checkBox3 = document.getElementById("myCheck");
+
+            var text = document.getElementById("text");
+
+            if (checkBox.checked && checkBox2.checked) {
+                text.innerHTML = checkBox.value + "," + checkBox2.value;
+            }
+            else if (checkBox.checked) {
+                text.innerHTML = checkBox.value
+
+            }
+            else if (checkBox2.checked) {
+                text.innerHTML = checkBox2.value
+            }
+            else if (checkBox3.checked) {
+                text.innerHTML = checkBox3.value
+            }
+            else{
+                text.innerHTML="not select textbox"
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback</title>
+</head>
+
+<body>
+
+    <script>
+        // function xyz(name, city, eduction, age) {
+        //     alert('\nName :-' + name +  '\ncity :- ' + city + ' \nEduction :- ' + eduction +  ' \n age :-' + age);
+        // }
+        // function abc(callback) {
+        //     var name = prompt('Enter your name');
+        //     var city = prompt('Enter your city');
+        //     var eduction = prompt('Enter your eduction');
+        //     var age = prompt('Enter your age');
+        //     callback(name, city, eduction, age)
+        // }
+        // abc(xyz)
+
+
+        function aaa(first, Middle, Last, age) {
+            alert('\nName :-' + first +  '\n MidddleName:- ' + Middle + ' \n Lastname:- ' +Last +  ' \n age :-' + age);
+
+        }
+        function bbb(callback) {
+            var first = prompt('Enter your first name ');
+            var Midddle = prompt('Enter your Midddle name');
+            var Last = prompt('Enter your Last name');
+            var age = prompt('Enter your age');
+            callback(first, Midddle, Last, age)
+        }
+        bbb(aaa)
+
+    </script>
+</body>
+
+</html>

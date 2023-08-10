@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <h2 id="header-title"> codekul</h2>
+        <p id="tagline"> computer classes</p>
+    </header>
+    <div>
+        <ul class="list-item"> computer</ul>
+        <ul class="list-item"> mobile</ul>
+        <ul class="list-item">phone</ul>
+    </div>
+    <form action="">
+        <input type="text">
+        <input type="submit">
+    </form>
+    
+    <script>
+        var headline=document.querySelector('#tagline')
+        headline.style.color='blue';
+
+        var items =document.querySelector('.list-item');
+         items.style.color='red';
+         var input = document.querySelector('input');
+         input.value = 'enter your name';
+
+         var button = document.querySelector('input[type="submit"]');
+         button.style.backgroundColor='red';
+         button.style.color='yellow';
+    </script>
+</body>
+</html>

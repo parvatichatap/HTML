@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function xfocus(e){
+e.style.background="yellow"
+    }
+    // xfocu();
+    function xblur(e){
+e.style.background="red"
+    }
+</script>
+<body>
+    <form action="">
+        Name <input type="text" id="name" onfocus="xfocus(this)" onblur="xblur(this)" onchange="xchange(this)"><br><br>
+        Age <input type="text" id="age" onfocus="xfocus(this)" onblur="xblur(this)">
+    </form>
+</body>
+</html>
